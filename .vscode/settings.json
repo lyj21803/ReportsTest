@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "f:\\Python\\zdyff\\Report\\report\\Scripts\\python.exe",
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.promptToConfigure": false
+}
