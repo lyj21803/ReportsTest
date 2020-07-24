@@ -146,6 +146,11 @@ def write_CXDatas_To_workbook(wb,report):
                 lastcol=ws.max_column-1
 
             datas=get_datas_From_sheet(ws,lastcol,lastcol+1)
+            temp=workbook["封面"]
+            
+            if (datas[1])[0]!=temp['B34'].value: 
+               continue
+
             print("开始写入测斜数据："+sheet.title)
             worksheet=workbook[sheet.title]
             for row in range(10,10+len(datas[0])):
@@ -153,7 +158,7 @@ def write_CXDatas_To_workbook(wb,report):
                     worksheet.cell(row,col,value=(datas[col-2])[row-10])
             
       #-----------------------------------------------------------------------
-   
+    print("数据写入完成！")
     workbook.save(filename=report)      
 
         
